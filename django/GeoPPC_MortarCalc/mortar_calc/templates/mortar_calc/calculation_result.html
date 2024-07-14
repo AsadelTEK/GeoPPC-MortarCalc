@@ -1,0 +1,12 @@
+{% extends 'mortar_calc/base.html' %}
+
+{% block title %}Calculation Result{% endblock %}
+
+{% block content %}
+<h1>Calculation Result</h1>
+<p>Compressive Strength: {{ result.compressive_strength }}</p>
+<p>Tensile Strength: {{ result.tensile_strength }}</p>
+<p>Porosity: {{ result.porosity }}</p>
+<p>Density: {{ result.density }}</p>
+<p>Absorption: {{ result.absorption }}</p>
+{% endblock %}

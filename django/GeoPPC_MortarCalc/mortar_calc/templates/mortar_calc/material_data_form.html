@@ -1,0 +1,12 @@
+{% extends 'mortar_calc/base.html' %}
+
+{% block title %}Input Data{% endblock %}
+
+{% block content %}
+<h1>Enter Material Data</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
