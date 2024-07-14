@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GeoPPC-MortarCalc</title>
+    <script>
+        function calculate() {
+            const formData = {
+                fly_ash: parseFloat(document.getElementById('fly_ash').value),
+                tanah_putih: parseFloat(document.getElementById('tanah_putih').value),
+                naoh: parseFloat(document.getElementById('naoh').value),
+                air: parseFloat(document.getElementById('air').value),
+                pasir: parseFloat(document.getElementById('pasir').value)
+            };
+
+            fetch('/calculate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response from the server (e.g., display results)
+                alert(data.message); 
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>GeoPPC-MortarCalc</h1>
+    <form id="mortarForm">
+        <label for="fly_ash">Fly Ash:</label>
+        <input type="number" id="fly_ash" name="fly_ash" required><br><br>
+
+        <label for="tanah_putih">Tanah Putih:</label>
+        <input type="number" id="tanah_putih" name="tanah_putih" required><br><br>
+
+        <label for="naoh">NaOH:</label>
+        <input type="number" id="naoh" name="naoh" required><br><br>
+
+        <label for="air">Air:</label>
+        <input type="number" id="air" name="air" required><br><br>
+
+        <label for="pasir">Pasir:</label>
+        <input type="number" id="pasir" name="pasir" required><br><br>
+
+        <button type="button" onclick="calculate()">Hitung</button>
+    </form>
+</body>
+</html>
