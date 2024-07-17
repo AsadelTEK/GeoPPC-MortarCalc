@@ -22,8 +22,44 @@ GeoPPC-MortarCalc adalah aplikasi web yang dirancang untuk menghitung dan mengan
 - Python 3.x
 - Django
 
-## Instalasi dan Menjalankan Aplikasi
+## Instalasi dan Menjalankan Aplikasi (cara 1)
+## Penggunaan Script `create.sh` untuk Menjalankan Django di Codespace GitHub
 
+### Persiapan Awal
+
+1. **Buat Codespace di GitHub:**
+   - Masuk ke repository GitHub Anda.
+   - Klik tombol `Code` di kanan atas, lalu pilih `Codespaces`.
+   - Klik `Create codespace on main` (atau cabang lain yang relevan).
+
+2. **Pastikan Skrip `create.sh` Tersedia:**
+   - Skrip `create.sh` sudah tersedia di root directory project Anda.
+
+### Menjalankan Skrip `create.sh`
+
+1. **Buat Skrip `create.sh` Dapat Dieksekusi:**
+   - Buka terminal di Codespace Anda dan jalankan perintah berikut untuk membuat skrip `create.sh` dapat dieksekusi:
+
+     ```sh
+     chmod +x create.sh
+     ```
+
+2. **Jalankan Skrip:**
+   - Di terminal, jalankan skrip dengan perintah berikut:
+
+     ```sh
+     ./create.sh
+     ```
+
+3. **Akses Server Django:**
+   - Setelah skrip selesai dijalankan, server Django akan berjalan pada alamat `0.0.0.0` di port `8000`.
+   - Buka browser Anda dan akses server Django melalui URL yang disediakan oleh Codespace (misalnya, `https://<codespace-id>.github.dev`).
+
+Dengan mengikuti langkah-langkah di atas, Anda dapat dengan mudah mengatur environment dan menjalankan server Django di GitHub Codespace menggunakan skrip `create.sh`.
+
+
+
+## Instalasi dan Menjalankan Aplikasi (cara 2)
 ### 1. Membuat Codespace di GitHub
 1. Masuk ke repository GitHub Anda.
 2. Klik tombol `Code` di kanan atas, lalu pilih `Codespaces`.
