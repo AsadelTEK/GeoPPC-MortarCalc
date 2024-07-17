@@ -11,3 +11,67 @@ Invensi teknologi yang berkaitan dengan perhitungan sifat mekanis mortar dimana 
 ## Uraian Singkat
 Tujuan utama dari aplikasi ini adalah untuk mengatasi permasalahan yang telah ada sebelumnya khususnya dalam perhitungan dan analisis sifat mekanis mortar PPC dan geopolimer dengan mengembangkan suatu sistem aplikasi komputer berbasis web dan Python. Sistem aplikasi ini terdiri dari modul input data material, modul perhitungan sifat mekanis, dan modul pengujian mekanis. Sistem ini dicirikan dengan kemampuan untuk menghitung kekuatan tekan, kekuatan tarik, porositas, densitas, dan absorpsi dari berbagai jenis mortar.
 Tujuan lain dari aplikasi ini adalah untuk menyediakan antarmuka pengguna yang intuitif dan mudah digunakan, serta menyediakan hasil perhitungan dan analisis dalam bentuk grafik dan tabel yang informatif.
+
+# Tutorial Penggunaan GeoPPC-MortarCalc
+Sistem Perhitungan dan Analisis Sifat Mekanik Mortar
+
+## Deskripsi
+GeoPPC-MortarCalc adalah aplikasi web yang dirancang untuk menghitung dan menganalisis sifat mekanik mortar berdasarkan data material yang dimasukkan pengguna.
+
+## Persyaratan
+- Python 3.x
+- Django
+
+## Instalasi dan Menjalankan Aplikasi
+
+### 1. Membuat Codespace di GitHub
+1. Masuk ke repository GitHub Anda.
+2. Klik tombol `Code` di kanan atas, lalu pilih `Codespaces`.
+3. Klik `Create codespace on main` (atau cabang lain yang relevan).
+
+### 2. Mengatur Virtual Environment
+1. Setelah Codespace terbuka, buka terminal baru.
+2. Buat virtual environment dengan menjalankan perintah berikut:
+    ```sh
+    python -m venv venv
+    ```
+
+3. Aktifkan virtual environment:
+    - Di Windows:
+      ```sh
+      venv\Scripts\activate
+      ```
+    - Di macOS/Linux:
+      ```sh
+      source venv/bin/activate
+      ```
+
+4. Instal semua dependensi yang diperlukan dari `requirements.txt` (jika ada). Jika tidak ada, Anda perlu menginstal Django secara manual:
+    ```sh
+    pip install django
+    ```
+
+### 3. Menyiapkan Database dan Migrasi
+1. Buat migrasi untuk model Django Anda:
+    ```sh
+    python manage.py makemigrations
+    ```
+
+2. Terapkan migrasi tersebut ke database:
+    ```sh
+    python manage.py migrate
+    ```
+
+### 4. Menjalankan Server Django
+1. Jalankan server Django dengan perintah berikut:
+    ```sh
+    python manage.py runserver
+    ```
+
+2. Buka browser dan akses aplikasi Anda di `http://127.0.0.1:8000/`.
+
+### 5. Langkah Tambahan (Opsional)
+- Buat superuser untuk mengakses admin panel:
+  ```sh
+  python manage.py createsuperuser
+
