@@ -33,7 +33,7 @@ GeoPPC-MortarCalc adalah aplikasi web yang dirancang untuk menghitung dan mengan
    - Klik `Create codespace on main` (atau cabang lain yang relevan).
 
 2. **Pastikan Skrip `create.sh` Tersedia:**
-   - Skrip `create.sh` sudah tersedia di root directory project Anda.
+   - Skrip `create.sh` sudah tersedia di root directory project Anda, yaitu di: `django/GeoPPC_MortarCalc`.
 
 ### Menjalankan Skrip `create.sh`
 
