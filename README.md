@@ -1,5 +1,5 @@
 # GeoPPC-MortarCalc
-# GeoPPC-MortarCalc: Sistem Aplikasi Komputer untuk Perhitungan dan Analisis Sifat Mekanik Mortar PPC dan Geopolimer dengan Aktivator NaOH Berbasis Web dan Python
+## Sistem Aplikasi Komputer untuk Perhitungan dan Analisis Sifat Mekanik Mortar PPC dan Geopolimer dengan Aktivator NaOH Berbasis Web dan Python
 
 ## Bidang
 Sistem aplikasi komputer yang digunakan untuk menghitung dan menganalisis sifat mekanis dari berbagai jenis mortar, lebih khusus lagi invensi ini berhubungan dengan perhitungan sifat mekanis mortar PPC dan mortar geopolimer dengan aktivator NaOH pada kondisi rendaman air laut.
