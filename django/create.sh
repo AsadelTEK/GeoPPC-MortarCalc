@@ -28,5 +28,5 @@ pip install django
 check_success "Failed to install Django"
 
 echo "running server..."
-python manage.py runserver
+python GeoPPC_MortarCalc/manage.py runserver
 check_success "Failed to run"
